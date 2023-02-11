@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interesting Facts</title>
+        <link rel="stylesheet" href="/Styles/styles.css">
+
+        <!-- style sheet from font awesome to be able to use icons -->
+        <script src="https://kit.fontawesome.com/bf6ece9def.js" crossorigin="anonymous"></script>
+
+        <script>
+
+            // based on users selection in dropbox, give different facts 
+            function mydropbox() 
+            {
+                let mylist = document.getElementById("myList");
+                let selectedIndex = mylist.selectedIndex;
+
+                let interstingString = " ";
+
+                if(selectedIndex == 0)
+                {
+                    interstingString = "";
+                }
+
+                if(selectedIndex == 1)
+                {
+                    interstingString = "In the 1930's, mathematician Edwin Kasner asked his nephew to " 
+                    + "think of a word that could represent 1 followed by 100 zeros. The boy, Milton Sirotta, " 
+                    + "came up with googol. The creators of the popular search engine varied the spelling and " 
+                    + "adopted the word Google to represent an infinite amount of information.";
+                }
+
+                if(selectedIndex == 2)
+                {
+                    interstingString = "If the moon were made of cheese: 74,074,074,100,000 slices of Kraft " 
+                    + "singles could be produced with a moon-sized wheel of cheese. This amount of cheese could " 
+                    + "feed every American student, kindergarden through highschool, 1 grilled cheese sandwhich " 
+                    + "everyday for the next 3,741 years!";
+                }
+
+                if(selectedIndex == 3)
+                {
+                    interstingString = "The fastest winds ever recorded on Earth blew through the suburbs of " 
+                    + "Oklahoma City, Oklahoma, on May 3, 1999. The 318-mph gusts were recorded during an F5 tornado " 
+                    + "that destoryed hundreds of homes.";
+                }
+
+                if(selectedIndex == 4)
+                {
+                    interstingString = "It took about 30 million hours for Stone Age workers to build Stonehenge";
+                } 
+
+                document.getElementById("IFact").innerText = interstingString;
+            }
+
+        </script>
+
+    </head>
+
+    <body style="background-image:url(/Images/pexels-gabriel-peter-696680.jpg);">
+
+
+
+        <!-- navigation bar section -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="interestingfacts.html" id="navbar-logo">
+                    <i class="fa-brands fa-empire" id="empire-logo"></i>
+                    Interesting Facts
+                    <i class="fa-brands fa-empire" id="empire-logo"></i>
+                </a>
+                <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="/index.html" class="navbar-links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="interestingfacts.html" class="navbar-links">
+                            Interesting Facts
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-links">
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar-btn">
+                        <a href="signup.html" class="button">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <script src="/javascript.js"></script> 
+        
+        <form>
+
+            <b> 
+                Select an interesting fact
+            </b>
+
+            <!-- drop down box to select interesting fact number -->
+            <select id = "myList" onchange = "mydropbox()" style="margin-top: 20px;">
+
+                <option> ---Choose Interesting Fact--- </option>
+                <option> Interesting Fact #1 </option>
+                <option> Interesting Fact #2 </option>
+                <option> Interesting Fact #3 </option>
+                <option> Interesting Fact #4 </option>
+
+            </select>
+
+            <br>
+
+            <!-- interesting fact will than appear here -->
+            <b style="margin-left: 65px; margin-top: 100px;" > 
+                
+
+                <h1 id = "IFact" style="margin-top: 20px; background-color: white;">
+                </h1>
+
+            </b>
+            
+
+        </form>
+    </body>
+</html>
+

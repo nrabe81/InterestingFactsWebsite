@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nolan's SBA Website</title>
+        <link rel="stylesheet" href="Styles/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+        <!-- style sheet from font awesome to be able to use icons -->
+        <script src="https://kit.fontawesome.com/bf6ece9def.js" crossorigin="anonymous"></script>
+
+        <style>
+
+            .body-text{
+                color: darkred;
+                margin-left: 100px;
+            }
+
+            .body-text2{
+                color: darkred;
+                margin-left: 150px;
+            }
+
+            .body-text3{
+                color: darkred;
+                margin-left: 200px;
+            }
+
+            .main-btn{
+                margin-left: 300px;
+            }
+        </style>
+
+    </head>
+    <body style="background-image:url(/Images/pexels-gabriel-peter-696680.jpg);">
+
+
+
+        <!-- navigation bar section -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" id="navbar-logo">
+                    <i class="fa-brands fa-empire" id="empire-logo"></i>
+                    MAIN PAGE
+                    <i class="fa-brands fa-empire" id="empire-logo"></i>
+                </a>
+                <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="/" class="navbar-links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="Views/interestingfacts.html" class="navbar-links">
+                            Interesting Facts
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="Views/about.html" class="navbar-links">
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar-btn">
+                        <a href="/Views/signup.html" class="button">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="main-container">
+                <div class="main-content">
+                    <h1 class="body-text">
+                        Interesting Facts &
+                    </h1>
+                    <h2 class="body-text2">
+                        Unusual Knowledge
+                    </h2>
+                    <h3 class="body-text3">
+                        That you never knew you wanted to know
+                    </h3>
+                    <br/>
+                    <button class="main-btn">
+                        <a href="/Views/interestingfacts.html">Get Started</a>
+                    </button>
+
+                </div>
+                <p></p>
+                <div class="main-img-container">
+                    <img src="/Images/undraw_professor_re_mj1s.svg" alt="picture" id="main-img">
+                </div>
+            </div>
+        </div>
+
+        <script src="javascript.js"></script> 
+
+    </body>
+</html>

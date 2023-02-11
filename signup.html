@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="/Styles/styles.css">
+
+        <!-- style sheet from font awesome to be able to use icons -->
+        <script src="https://kit.fontawesome.com/bf6ece9def.js" crossorigin="anonymous"></script>
+
+        <style>
+            .signup-form {
+            margin: auto;
+            margin-top: 20px;
+            width: 15%;            
+            padding: 10px;
+            }
+        </style>
+
+
+    </head>
+
+    <body style="background-image:url(/Images/pexels-gabriel-peter-696680.jpg);">
+
+        <!-- navigation bar section -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="signup.html" id="navbar-logo">
+                    <i class="fa-sharp fa-solid fa-radiation" id="radiation-icon"></i>
+                        Sign Up
+                    <i class="fa-sharp fa-solid fa-radiation" id="radiation-icon"></i>
+                </a>
+                <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="/index.html" class="navbar-links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="interestingfacts.html" class="navbar-links">
+                            Interesting Facts
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-links">
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar-btn">
+                        <a href="signup.html" class="button">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <script src="/javascript.js"></script> 
+
+        <!-- sign up form -->
+
+        <div style="align-self: center;">
+            <form class="signup-form" action = "form.html" name = "myForm" onsubmit = "return(validate());"  method="POST" id="formone">
+
+                <table class="table" cellspacing = "2" cellpadding = "2" border = "1">
+                    
+                    <tr> 
+                        <td>
+                            <input type = "text" name = "Name" value="" id="NAME" placeholder="Enter Name" />
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <input type = "text" name = "EMail" value="" id="emailID" placeholder="Enter Email" />
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <input type = "text" name = "Zip" id="ZipID" placeholder="Enter Zip Code" />
+                        </td>
+                    </tr>
+    
+                    <tr> 
+                        <td> 
+                            <select name = "Country" id="CountryId" >
+                                <option value = "USA">  [choose yours] | Select Country</option>
+                                <option value = "USA">USA</option>
+                                <option value = "UK">UK</option>
+                                <option value = "UAE">UAE</option>
+                            </select> 
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <input type = "password" name = "password" value="" id="password" placeholder="Password" />
+                        </td>
+                    </tr>
+    
+                <tr>
+                    <td>
+                        <input type = "submit" value = "Submit" />
+                    </td>
+                </tr>
+    
+                </table> 
+    
+            </form>
+        </div>
+        
+        
+    </body>
+</html>
